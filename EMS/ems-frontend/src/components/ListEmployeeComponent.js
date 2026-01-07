@@ -42,7 +42,7 @@ const ListEmployeeComponent = () => {
     return (
         <div className = "container">
             <br /><br />
-            <h2 className = "text-center"> List Of Insurance Policy </h2>
+            <h2 className = "text-center"> List Of Insurance Policies </h2>
             {/* <Link to = "/add-employee" className = "btn btn-primary mb-2" > Add Employee </Link> */}
             <button className = "btn btn-primary mb-2" onClick={addNewEmployee }>Add Insurance</button>
             <table className="table table-bordered table-striped">
