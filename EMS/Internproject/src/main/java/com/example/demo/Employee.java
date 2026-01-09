@@ -11,19 +11,20 @@ import jakarta.persistence.*;
 @NoArgsConstructor
 @AllArgsConstructor
 @Entity
-@Table(name = "employees")
+@Table(name = "insurance_data")
 public class Employee {
 	@Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
+	@Column(name= "insurance_id")
     private long id;
 
-    @Column(name = "first_name")
+    @Column(name = "insurance_policy_name")
     private String firstName;
 
-    @Column(name = "last_name")
+    @Column(name = "insurance_type")
     private String lastName;
 
-    @Column(name = "email_id")
+    @Column(name = "insurance_coverage(self/family)")
     private String email;
 	
     public Employee()

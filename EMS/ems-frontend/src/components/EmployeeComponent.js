@@ -55,9 +55,9 @@ const EmployeeComponent = () => {
     const pageTitle = () => {
 
         if(id){
-            return <h2 className = "text-center">Update Employee</h2>
+            return <h2 className = "text-center">Update Insurance</h2>
         }else{
-            return <h2 className = "text-center">Add Employee</h2>
+            return <h2 className = "text-center">Add Insurance</h2>
         }
     }
 
@@ -73,10 +73,10 @@ const EmployeeComponent = () => {
                         <div className = "card-body">
                             <form>
                                 <div className = "form-group mb-2">
-                                    <label className = "form-label"> First Name :</label>
+                                    <label className = "form-label"> Insurance Policy Name :</label>
                                     <input
                                         type = "text"
-                                        placeholder = "Enter first name"
+                                        placeholder = "Enter Insurance policy name"
                                         name = "firstName"
                                         className = "form-control"
                                         value = {firstName}
@@ -86,10 +86,10 @@ const EmployeeComponent = () => {
                                 </div>
 
                                 <div className = "form-group mb-2">
-                                    <label className = "form-label"> Last Name :</label>
+                                    <label className = "form-label"> Insurance Type :</label>
                                     <input
                                         type = "text"
-                                        placeholder = "Enter last name"
+                                        placeholder = "Enter insurance type"
                                         name = "lastName"
                                         className = "form-control"
                                         value = {lastName}
@@ -99,10 +99,10 @@ const EmployeeComponent = () => {
                                 </div>
 
                                 <div className = "form-group mb-2">
-                                    <label className = "form-label"> Email Id :</label>
+                                    <label className = "form-label"> Insurance Coverage (self/family) :</label>
                                     <input
-                                        type = "email"
-                                        placeholder = "Enter email Id"
+                                        type = "text"
+                                        placeholder = "Enter Insurance Coverage"
                                         name = "email"
                                         className = "form-control"
                                         value = {email}
